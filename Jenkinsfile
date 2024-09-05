@@ -15,8 +15,8 @@ pipeline {
             steps {
                 // Utilise une commande shell (sh) pour installer les dépendances avec npm et construire le projet
 		        sh '''
-                    npm install  // Installe les dépendances listées dans le fichier package.json
-                    npm run build  // Exécute le script de construction défini dans le package.json
+                    npm install
+                    npm run build
                 '''
             }
         }
