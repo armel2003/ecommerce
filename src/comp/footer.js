@@ -47,7 +47,7 @@ const Footer = () => {
           </div>
           <div className='right_box'>
             <div className='header'>
-              <img src='image/logo.webp' alt='' />
+              <img src='image/Brand-Logo-6.png' alt='' />
               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis faucibus ipsum id sem consequat.</p>
             </div>
             <div className='bottom'>
