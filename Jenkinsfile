@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone') {
             steps {
-                git branch: 'main', url: 'https://github.com/armel2003/Pro-Ecommerce.git'
+                git branch: 'main', url: 'https://github.com/armel2003/ecommerce.git'
             }
         }
         stage('Build') {
