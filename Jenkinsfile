@@ -30,10 +30,10 @@ pipeline {
                 # $sonarqube_project et $sonarqube_token doivent être configurés dans les variables d'environnement Jenkins
 
                 sonar-scanner \
-                  -Dsonar.projectKey=$sonarqube_project \  // Spécifie la clé du projet SonarQube à analyser
-                  -Dsonar.sources=. \  // Indique que tous les fichiers du répertoire actuel doivent être analysés
-                  -Dsonar.host.url=http://sonarqube:9000 \  // L'URL du serveur SonarQube
-                  -Dsonar.token=$sonarqube_token  // Le jeton d'authentification pour accéder à l'API SonarQube
+                  -Dsonar.projectKey=$sonarqube_project \ 
+                  -Dsonar.sources=. \ 
+                  -Dsonar.host.url=http://sonarqube:9000 \  
+                  -Dsonar.token=$sonarqube_token 
                 '''
             }
         }
