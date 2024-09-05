@@ -30,10 +30,10 @@ pipeline {
                 # $sonarqube_project et $sonarqube_token doivent être configurés dans les variables d'environnement Jenkins
 
                 sonar-scanner \
-                  -Dsonar.projectKey=$sonarqube_project \ 
-                  -Dsonar.sources=. \ 
-                  -Dsonar.host.url=http://sonarqube:9000 \  
-                  -Dsonar.token=$sonarqube_token 
+                  -Dsonar.projectKey=$sonarqube_project \
+                  -Dsonar.sources=. \
+                  -Dsonar.host.url=http://sonarqube:9000 \
+                  -Dsonar.token=$sonarqube_token
                 '''
             }
         }
